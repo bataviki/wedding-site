@@ -1,18 +1,35 @@
-/* Common styles */
+/* Common styles */\index.html
 
 * {
     box-sizing: border-box;
 }
 
-h1,h2,h3,ul,p,img,.header-wrapper,.content {
-    margin-bottom: 1rem;
+body {
+    background: url(/assets/wedding-landing-background.png) repeat center;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eda087;
+}
+
+.the-question {
+    font-weight: bold;
 }
 
 /* Header */
 
 .cover {
     background: url(/assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
-    background-size: cover;
     display: table;
     text-align: center;
     height: 100vh;
@@ -26,27 +43,27 @@ h1,h2,h3,ul,p,img,.header-wrapper,.content {
 
 .box {
     background-color: hsla(100,0%,0%,.6);
-    padding: 4rem;
+    padding: 1rem;
     margin: 0 auto;
 }
 
 .tagline, .date {
     font-family: 'Libre Baskerville', serif;
-    font-size: 3.5rem;
-    letter-spacing: .5rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
     color: hsla(0,0%,100%,.9);
 }
 
 .tagline {
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
 }
 
 .headline {
     font-family: 'Great Vibes', cursive;
     color: #d2ba87;
-    font-size: 10rem;
-    margin-bottom: 4rem;
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .date {
@@ -57,23 +74,23 @@ h1,h2,h3,ul,p,img,.header-wrapper,.content {
     display: inline-block;
     content: "";
     background-color: #fff;
-    height: 3px;
-    width: 5rem;
+    height: 1px;
+    width: 1.5rem;
     vertical-align: middle;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
-hr {
-    width: 40rem;
-    height: 3px;
+.hr-header {
+    width: 10rem;
+    height: 1px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     background-color: white;
-    color: white;
+    border: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   
     .cover {
         background: url(/assets/wedding-landing-cover.jpg) no-repeat center/cover;
@@ -111,7 +128,7 @@ hr {
         margin-bottom: 0;
     }
 
-    hr {
+    .hr-header {
         width: 15rem;
         height: 1px;
         margin-bottom: 2rem;;
@@ -120,4 +137,377 @@ hr {
 
 /* Content */
 
+.content {
+    text-align: center;
+    color: #444349;
+    margin-top: 2rem;
+}
+
+img {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.hr-content {
+    width: 5rem;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  
+    main {
+        background: url(/assets/wedding-landing-background.png) repeat center;
+        display: inline-block;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    img {
+        width: 8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hr-content {
+        display: none;
+    }
+
+    li {
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+/* Locations */
+
+li > p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  
+    li > p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .locations > h2 {
+        margin-bottom: 0rem;
+    }
+
+}
+
+/* Program */
+
+.program-wapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: block;
+    width: 100%;
+}
+
+.program {
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    margin-bottom: 2rem;
+}
+
+.program-times, .program-tagline {
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.6rem;
+}
+
+.program-tagline {
+    font-style: italic;
+    letter-spacing: .05rem;
+    margin-bottom: 0rem;
+}
+
+.program-times {
+    letter-spacing: .1rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  
+    .program-wapper {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .program-times, .program-tagline {
+        font-size: 1.1rem;
+        text-align: left;
+        font-family: 'Mulish', sans-serif;
+        line-height: 1.5rem;
+        letter-spacing: 0rem;
+    }
+    
+    .program-times > li, .program-tagline {
+        display: block;
+        margin: auto;
+    }
+}
+
+/* Gifts */
+
+.gifts > p {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
+    line-height: 1.7rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .gifts > p {
+        font-size: 1.3rem;
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Q&A */
+
+.questions-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: block;
+    width: 100%;
+}
+
+.questions {
+    color:#d2ba87;
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.questions-wrapper > h2 {
+    line-height: 4.7rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.travel > h3, .food > h3, .other > h3 {
+    font-weight: normal;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.the-question, .the-answer {
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7em;
+    letter-spacing: 0.05em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.the-answer {
+    margin-bottom: 2rem;
+}
+
+.hr-questions {
+    width: 10rem;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-color:#d2ba87;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .hr-questions {
+        display: none;
+    }
+
+    .questions-wrapper {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .questions-wrapper > h2 {
+        line-height: 5.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .questions {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .questions-wrapper > div {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+
+    .the-question, .the-answer {
+        font-family: 'Mulish', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+    }
+
+    .travel > h3, .food > h3, .other > h3 {
+        line-height: 2rem;
+        margin-bottom: 1em;
+        margin-top: 1rem;
+    }
+
+    .travel > h3, .food > h3, .other > h3, .the-question, .the-answer {
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .the-answer {
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Contact */
+
+.contact > h2 {
+    margin-top: 2rem;
+}
+
+.contact > p {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+    width: 73%;
+    margin-bottom: 3rem;
+    line-height: 1.8rem;
+}
+
+.mail {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact > h2 {
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .contact > p {
+        font-size: 1.1rem;
+        margin-bottom: 4rem;
+        line-height: 0rem;
+    }
+    
+    .mail {
+        font-size: 1.1rem;
+    }
+
+}
+
 /* Footer */
+
+footer {
+    background: #606060;
+    display: table-cell;
+    height: auto;
+    font-family: 'Muli', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+    width: 100vw;
+  } 
+  
+  small {
+    color: white;
+    letter-spacing: .05rem;
+    line-height: 1.3rem;
+  }
+
+@media screen and (min-width: 768px) {
+
+    .footer-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 2rem 2rem;
+      } 
+    
+    footer {
+        height: 7vh;
+        font-family: 'Muli', sans-serif;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+      
+    small {
+        letter-spacing: .05rem;
+        margin-bottom: 0rem;
+        line-height: 0rem;
+    }
+
+}
+
+@media (max-width: 258px) {
+    footer {
+        width: 100%;
+      }
+      
+      .footer-wrapper {
+        width: 100%;
+      }
+    }
