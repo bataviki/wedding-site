@@ -1,4 +1,4 @@
-/* Common styles */\index.html
+/* Common styles */
 
 * {
     box-sizing: border-box;
@@ -29,7 +29,7 @@ a:hover {
 /* Header */
 
 .cover {
-    background: url(/assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+    background: url("/assets/wedding-landing-cover.jpg") no-repeat 70% center/cover;
     display: table;
     text-align: center;
     height: 100vh;
