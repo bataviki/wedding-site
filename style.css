@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url("wedding-site/assets/wedding-landing-background.png") repeat center;
+    background: url(assets/wedding-landing-background.png) repeat center;
     display: inline-block;
 }
 
@@ -29,7 +29,7 @@ a:hover {
 /* Header */
 
 .cover {
-    background: url("wedding-site/assets/wedding-landing-cover.jpg") no-repeat 70% center/cover;
+    background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
     display: table;
     text-align: center;
     height: 100vh;
@@ -93,7 +93,8 @@ a:hover {
 @media screen and (min-width: 768px) {
   
     .cover {
-        background: url(/assets/wedding-landing-cover.jpg) no-repeat center/cover;
+        background-size: center/cover;
+        background-repeat: no-repeat;
       }
 
     .headline {
