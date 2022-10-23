@@ -291,18 +291,19 @@ li > p {
 /* Gifts */
 
 .gifts > p {
+    font-family: 'Libre Baskerville', serif;
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 2rem;
-    font-size: 1.3rem;
-    letter-spacing: .05rem;
+    font-size: 1.1rem;
+    letter-spacing: .02rem;
     line-height: 1.7rem;
 }
 
 @media screen and (min-width: 768px) {
 
     .gifts > p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 0.05rem;
         line-height: 1rem;
         margin-bottom: 2rem;
